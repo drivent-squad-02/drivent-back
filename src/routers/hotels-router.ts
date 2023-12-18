@@ -8,6 +8,6 @@ hotelsRouter
   .all('/*', authenticateToken)
   .get('/', getHotels)
   .get('/:hotelId', getHotelsWithRooms)
-  .get('/allHotels/withRooms', getAllHotelsWithRooms);
+  .get('/all/infoWithRooms', getAllHotelsWithRooms);
 
 export { hotelsRouter };
